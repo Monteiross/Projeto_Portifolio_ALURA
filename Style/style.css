@@ -42,19 +42,27 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.container__conteudo__links__titulo {
     font-size: 24px;
-    font-family: 'Monteserrat', sans-serif;
-    font-weight: 600;
+    font-family: 'Krona One', sans-serif;
+    font-weight: 400;
 }
 
 .container__conteudo__links__link {
-    background-color: #22D4FD;
-    width: 280px;
-    border-radius: 16px;
+    border: 2px solid #22D4FD;
+    border-radius: 8px;
+    width: 378px;
     text-align: center;
     padding: 21.5px 0;
     text-decoration: none;
-    color: black;
+    color: #F6F6F6;
+    font-size: 24px;
+    font-family: 'Monteserrat', sans-serif;
+    font-weight: 600;
 }
 
 .titulo-destaque {
