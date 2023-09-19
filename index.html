@@ -8,9 +8,12 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <header class="nav">
-        <a class="nav__home" href="index.html">Home</a>
-        <a class="nav__bio" href="Pages/sobreMim.html">Sobre Mim</a>
+    <header class="cabecalho">
+        <nav class="cabecalho__menu">
+            <a class="cabecalho__menu__link" href="index.html">Home</a>
+            <a class="cabecalho__menu__link" href="Pages/sobreMim.html">Sobre Mim</a>
+        </nav>
+
     </header>
     <main class="container">
         <section class="container__conteudo">
@@ -22,15 +25,24 @@
             </p>
             <div class="container__conteudo__links">
                 <h2 class="container__conteudo__links__titulo">Acesse minhas redes:</h2>
-                <a class="container__conteudo__links__link" href="https://github.com/Monteiross">GitHub</a>
-                <a class="container__conteudo__links__link" href="https://www.linkedin.com/in/tiago-monteiro-ss/">LinkdIn</a>
-                <a class="container__conteudo__links__link" href="https://www.twitch.tv/besourorb">Twtich</a>
+                <a class="container__conteudo__links__link" href="https://github.com/Monteiross">
+                    <img src="assets/github.png" alt="Icone do GitHub">
+                    GitHub
+                </a>
+                <a class="container__conteudo__links__link" href="https://www.linkedin.com/in/tiago-monteiro-ss/">
+                    <img src="assets/linkedin.png" alt="Icone do LinkdIn">
+                    LinkdIn
+                </a>
+                <a class="container__conteudo__links__link" href="https://www.twitch.tv/besourorb">
+                    <img src="assets/twitch.png" alt="Icone do Twtich">
+                    Twtich
+                </a>
             </div>
         </section>
-        <img src="images/foto_preto_branco.svg" alt="Foto do Tiago em preto e branco.">
+        <img src="assets/foto_preto_branco.svg" alt="Foto do Tiago em preto e branco.">
     </main>
     <footer class="rodape">
-        <p class="rodape__texto">Desenvolvido por Tiago Monteiro</p>        
+        <p class="rodape__text">Desenvolvido por Tiago Monteiro.</p>        
     </footer>
 
 </body>
