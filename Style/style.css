@@ -11,11 +11,13 @@ body {
     color: #F6F6F6;
 }
 
+.cabecalho {
+    padding: 2% 0% 0% 15%;
+}
+
 .cabecalho__menu {
     display: flex;
     gap: 80px;
-    padding-top: 65px;
-    padding-left: 65px;
 }
 
 .cabecalho__menu__link {
@@ -30,7 +32,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8%;
+    padding: 5% 15%;
 }
 
 .container__conteudo {
