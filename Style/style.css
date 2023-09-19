@@ -9,6 +9,8 @@
     /*FONTES*/
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Monteserrat', sans-serif;
+    --tamanho-primario: 2.25rem;
+    --tamanho-secundario: 1.5rem;
 }
 
 * {
@@ -34,7 +36,7 @@ body {
 .cabecalho__menu__link {
     text-decoration: none;
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-secundario);
     font-weight: 600;
     color: var(--cor-tercearia);
 }
@@ -44,24 +46,29 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 15%;
+    gap: 86px;
 }
 
 .container__conteudo {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .container__conteudo__titulo {
-    font-size: 36px;
+    font-size: var(--tamanho-primario);
     font-family: var(--fonte-primaria);
 
     margin: 0px;
 }
 
+.titulo-destaque {
+    color: var(--cor-tercearia);
+}
+
 .container__conteudo__texto {
-    font-size: 24px;
+    font-size: var(--tamanho-secundario);
     font-family: var(--fonte-secundaria);
     font-weight: 400;
 }
@@ -75,7 +82,7 @@ body {
 }
 
 .container__conteudo__links__titulo {
-    font-size: 24px;
+    font-size: var(--tamanho-secundario);
     font-family: var(--fonte-primaria);
     font-weight: 400;
 }
@@ -87,12 +94,12 @@ body {
     align-items: center;
     border: 2px solid var(--cor-tercearia);
     border-radius: 8px;
-    width: 378px;
+    width: 60%;
     text-align: center;
     padding: 16px;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-size: 24px;
+    font-size: var(--tamanho-secundario);
     font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
@@ -101,8 +108,8 @@ body {
     background-color: var(--cor-hover);
 }
 
-.titulo-destaque {
-    color: var(--cor-tercearia);
+.container__image {
+    width: 50%;
 }
 
 .rodape {
@@ -115,5 +122,31 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
     font-weight: 400;
-    font-size: 24px;
+    font-size: var(--tamanho-secundario);
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1200px) {
+
+    .cabecalho {
+        padding: 15% 0px 0px 0px;
+    }
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    .container {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .container__conteudo {
+        width: auto;
+    }
+
+    .container__image {
+        max-width: 450px;
+        min-width: 200px;
+    }
+
 }
