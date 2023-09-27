@@ -48,13 +48,15 @@ nav, footer {
 }
 
 nav {
-    gap: 80px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .cabecalho {
     margin-top: 3%;
     background-color: var(--cor-primaria);
 }
+
 
 .cabecalho__menu__link {
     text-decoration: none;
@@ -192,7 +194,7 @@ nav {
 
 /* RESPONSIVIDADE */
 
-@media (max-width: 1200px) {
+@media (max-width: 860px) {
 
     .cabecalho {
         margin-bottom: 5%;
