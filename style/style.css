@@ -43,7 +43,6 @@ header {
 }
 
 nav, footer {
-	width: 100%;
 	min-height: 20px;
 	text-align: center;
 }
@@ -54,6 +53,7 @@ nav {
 
 .cabecalho {
     margin-top: 3%;
+    background-color: var(--cor-primaria);
 }
 
 .cabecalho__menu__link {
@@ -242,7 +242,6 @@ nav {
     }
 
     .rodape {
-        width: 100%;
         position: relative;
         bottom: 0px;
     }
