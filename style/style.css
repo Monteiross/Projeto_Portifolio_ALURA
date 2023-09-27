@@ -87,6 +87,7 @@ body {
     top: 0px; 
     left: 100%; 
     border: 1px #CCCCCC solid;
+    margin-left: 3em;
 }
 
 .container__conteudo {
@@ -112,6 +113,7 @@ body {
     font-size: var(--tamanho-secundario);
     font-family: var(--fonte-secundaria);
     font-weight: 400;
+    text-indent: 1.2em;
 }
 
 .container__conteudo__links {
