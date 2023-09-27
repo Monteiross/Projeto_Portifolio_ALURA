@@ -14,24 +14,46 @@
     --tamanho-secundario: 1.5rem;
 }
 
-* {
-    margin: 0px;
-    padding: 0px;
+
+html, body {
+    overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    box-sizing: border-box;
+    display: flex;
+	flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
 
-.cabecalho {
-    padding: 2% 0% 0% 15%;
+main {
+	flex-grow: 1;
 }
 
-.cabecalho__menu {
-    display: flex;
+
+header {
+	position: sticky;
+	top: 0;
+}
+
+nav, footer {
+	width: 100%;
+	min-height: 20px;
+	text-align: center;
+}
+
+nav {
     gap: 80px;
+}
+
+.cabecalho {
+    margin-top: 3%;
 }
 
 .cabecalho__menu__link {
@@ -52,9 +74,8 @@ body {
 .container {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 5% 15%;
     gap: 0px;
+    justify-content: center
 }
 
 .container__lista {
@@ -91,7 +112,7 @@ body {
 }
 
 .container__conteudo {
-    width: 100%;
+    width: 35%;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -152,12 +173,13 @@ body {
 }
 
 .container__image {
-    width: 100%;
+    margin: 0 3em;
 }
+
 
 .rodape {
     background-color: var(--cor-tercearia);
-    padding: 24px;
+    padding: 12px;
 }
 
 .rodape__text {
@@ -165,7 +187,7 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
     font-weight: 400;
-    font-size: var(--tamanho-secundario);
+    font-size: 20px;
 }
 
 /* RESPONSIVIDADE */
@@ -173,7 +195,7 @@ body {
 @media (max-width: 1200px) {
 
     .cabecalho {
-        padding: 15% 0px 0px 0px;
+        margin-bottom: 5%;
     }
     .cabecalho__menu {
         justify-content: center;
@@ -195,7 +217,9 @@ body {
     }
 
     .container__conteudo__texto {
-        font-size: 18px;
+        font-size: 0.8rem;
+        word-spacing: 0.1px;
+        letter-spacing: 0.5px;
     }
 
     .container__conteudo__links__titulo {
@@ -204,7 +228,8 @@ body {
     }
 
     .container__image {
-        max-width: 180px;
+        width: 100%;
+        max-width: 200px;
         min-width: 100px;
     }
 
@@ -216,8 +241,16 @@ body {
         font-size: 16px;
     }
 
+    .rodape {
+        width: 100%;
+        position: relative;
+        bottom: 0px;
+    }
+
     .rodape__text {
         font-size: 12px;
+        justify-content: center;
+        text-align: center;
     }
 
 }
