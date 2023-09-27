@@ -181,15 +181,43 @@ body {
     .container {
         flex-direction: column-reverse;
         padding: 5%;
+        gap: 2em;
     }
 
     .container__conteudo {
         width: auto;
+        gap: 0.5em;
+    }
+
+    .container__conteudo__titulo {
+        font-size: 22px;
+        margin-bottom: 1em;
+    }
+
+    .container__conteudo__texto {
+        font-size: 18px;
+    }
+
+    .container__conteudo__links__titulo {
+        font-size: 20px;
+        margin-top: 2em;
     }
 
     .container__image {
-        max-width: 450px;
-        min-width: 200px;
+        max-width: 180px;
+        min-width: 100px;
+    }
+
+    .cabecalho__menu {
+        gap: 1em;
+    }
+
+    .cabecalho__menu__link {
+        font-size: 16px;
+    }
+
+    .rodape__text {
+        font-size: 12px;
     }
 
 }
