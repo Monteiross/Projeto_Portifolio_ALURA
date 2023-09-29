@@ -144,6 +144,7 @@ nav {
     text-indent: 1.2em;
     line-height: 150%;
     letter-spacing: 0.05em;
+    text-align: justify;
 }
 
 .container__conteudo__links {
@@ -182,6 +183,7 @@ nav {
 }
 
 .container__image {
+    max-width: 700px;
     width: 22%;
     margin: 0 3em;
     top: 0;   
@@ -200,6 +202,7 @@ nav {
     color: var(--cor-primaria);
     font-weight: 400;
     font-size: 14px;
+    padding: 18px;
 }
 
 #citacao {
