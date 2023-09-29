@@ -75,7 +75,7 @@ nav {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: center ;
     gap: 0px;
     justify-content: center
 }
@@ -114,16 +114,22 @@ nav {
 }
 
 .container__conteudo {
-    width: 35%;
+    width: 27%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 1em;
+    gap: 4em;
+}
+
+.conteudo__about {
+    padding: 3em;
+    gap: 0.8em;
 }
 
 .container__conteudo__titulo {
     font-size: var(--tamanho-primario);
     font-family: var(--fonte-primaria);
+    line-height: 156%;
+    letter-spacing: 0.05em;
 
     margin: 0px;
 }
@@ -135,8 +141,9 @@ nav {
 .container__conteudo__texto {
     font-size: var(--tamanho-secundario);
     font-family: var(--fonte-secundaria);
-    font-weight: 400;
     text-indent: 1.2em;
+    line-height: 150%;
+    letter-spacing: 0.05em;
 }
 
 .container__conteudo__links {
@@ -160,7 +167,7 @@ nav {
     align-items: center;
     border: 2px solid var(--cor-tercearia);
     border-radius: 8px;
-    width: 60%;
+    width: 50%;
     text-align: center;
     padding: 16px;
     text-decoration: none;
@@ -175,7 +182,7 @@ nav {
 }
 
 .container__image {
-    margin: 0 3em;
+    margin: 0 3em;    
 }
 
 
@@ -190,6 +197,11 @@ nav {
     color: var(--cor-primaria);
     font-weight: 400;
     font-size: 20px;
+}
+
+#citacao {
+    text-align: right;
+    font-style: italic;
 }
 
 /* RESPONSIVIDADE */
