@@ -190,7 +190,8 @@ nav {
 
 .rodape {
     background-color: var(--cor-tercearia);
-    padding: 12px;
+    padding: 20px;
+    text-align: center;
 }
 
 .rodape__text {
@@ -198,7 +199,7 @@ nav {
     font-family: var(--fonte-secundaria);
     color: var(--cor-primaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 #citacao {
