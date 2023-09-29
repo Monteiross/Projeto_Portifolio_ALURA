@@ -101,7 +101,7 @@ nav {
 }
 
 .link__imagem {
-    width: 350px;
+    width: 65rem;
 }
 
 .container__link:hover span {
@@ -204,6 +204,11 @@ nav {
     font-style: italic;
 }
 
+#container__projetos {
+    justify-content: flex-start;
+    padding: 0% 30%;
+}
+
 /* RESPONSIVIDADE */
 
 @media (max-width: 860px) {
@@ -217,10 +222,11 @@ nav {
     }
     .cabecalho__menu {
         justify-content: space-evenly;
+        margin-top: 1rem;
     }
     .container {
         flex-direction: column-reverse;
-        padding: 5%;
+        padding: 5% 7%;
         gap: 2em;
     }
 
@@ -240,8 +246,13 @@ nav {
         letter-spacing: 0.5px;
     }
 
+    .container__conteudo__links__link {
+        font-size: 14px;
+        padding: 5px;
+    }
+
     .container__conteudo__links__titulo {
-        font-size: 20px;
+        font-size: 18px;
         margin-top: 2em;
     }
 
@@ -257,18 +268,33 @@ nav {
 
     .cabecalho__menu__link {
         font-size: 16px;
-        padding: 0;
+        padding: 0em;
+    }
+
+    .container__link {
+        padding: 1em;
     }
 
     .rodape {
         position: relative;
         bottom: 0px;
+        height: 35px;
+        text-align: center;
     }
 
     .rodape__text {
         font-size: 12px;
         justify-content: center;
         text-align: center;
+    }
+
+    #container__projetos {
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .conteudo__about {
+        padding: 0px 20px ;
     }
 
 }
