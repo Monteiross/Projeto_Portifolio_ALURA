@@ -89,7 +89,7 @@ nav {
     position: relative; 
     display: block;
     width: 100%;
-    padding: 5px 0;
+    padding: 20px 0;
 }
 
 .container__link:hover {
@@ -101,7 +101,7 @@ nav {
 }
 
 .link__imagem {
-    width: 50rem;
+    width: 40rem;
 }
 
 .container__link:hover span {
@@ -190,7 +190,7 @@ nav {
 
 .rodape {
     background-color: var(--cor-tercearia);
-    padding: 20px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -208,8 +208,9 @@ nav {
 }
 
 #container__projetos {
+    align-items: flex-start;
     justify-content: flex-start;
-    padding: 0% 30%;
+    padding: 7% 30%;
 }
 
 /* RESPONSIVIDADE */
@@ -301,7 +302,7 @@ nav {
     }
 
     .link__imagem {
-        width: 0px;
+        width: 220px;
     }
 
 }
