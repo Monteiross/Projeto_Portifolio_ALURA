@@ -10,8 +10,8 @@
     /*FONTES*/
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Monteserrat', sans-serif;
-    --tamanho-primario: 2.25rem;
-    --tamanho-secundario: 1.5rem;
+    --tamanho-primario: 1.8rem;
+    --tamanho-secundario: 1rem;
 }
 
 
@@ -101,7 +101,7 @@ nav {
 }
 
 .link__imagem {
-    width: 65rem;
+    width: 50rem;
 }
 
 .container__link:hover span {
@@ -163,16 +163,16 @@ nav {
 .container__conteudo__links__link {
     display: flex;
     justify-content: center;
-    gap: 16px;
+    gap: 0px 16px;
     align-items: center;
     border: 2px solid var(--cor-tercearia);
     border-radius: 8px;
     width: 50%;
     text-align: center;
-    padding: 16px;
+    padding: 10px 16px;
     text-decoration: none;
     color: var(--cor-secundaria);
-    font-size: var(--tamanho-secundario);
+    font-size: 12px;
     font-family: var(--fonte-secundaria);
     font-weight: 600;
 }
@@ -182,7 +182,9 @@ nav {
 }
 
 .container__image {
-    margin: 0 3em;    
+    width: 22%;
+    margin: 0 3em;
+    top: 0;   
 }
 
 
@@ -295,6 +297,10 @@ nav {
 
     .conteudo__about {
         padding: 0px 20px ;
+    }
+
+    .link__imagem {
+        width: 0px;
     }
 
 }
